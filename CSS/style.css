@@ -1,0 +1,143 @@
+/* style.css */
+
+/* Estilização da seção de boas-vindas */
+.welcome-section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 56px); /* Ajusta a altura, subtraindo a altura do header */
+    overflow: hidden;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.welcome-message h1 {
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    margin-bottom: 20px;
+}
+
+.welcome-message p {
+    font-size: 1.25rem; /* Aumenta o tamanho do parágrafo */
+    margin-bottom: 20px;
+}
+
+.welcome-message .btn-primary {
+    background-color: #007bff; /* Azul padrão do Bootstrap */
+    border-color: #007bff;
+    font-size: 1.25rem; /* Aumenta o tamanho do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-transform: uppercase; /* Texto em maiúsculas */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 10px; /* Espaço entre o logo e o nome da plataforma */
+}
+
+/* Se necessário, ajuste a margem para o responsivo */
+@media (max-width: 767px) {
+    header h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+hr {
+    margin: 0; /* Remova a margem padrão se necessário */
+    border-top: 1px solid #dee2e6; /* Cor e estilo da linha */
+}
+
+/* Estilização do menu lateral */
+.sidebar {
+    background-color: #343a40; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+}
+
+.sidebar .nav-link {
+    color: #adb5bd; /* Cor do texto dos links */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057; /* Fundo mais escuro no hover */
+    color: #fff; /* Texto branco no hover */
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+.sidebar .titulo-divisao {
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #495057; /* Fundo mais escuro para divisões */
+    color: #fff; /* Texto branco */
+    border-bottom: 1px solid #6c757d; /* Borda inferior */
+}
+
+.sidebar .card-header {
+    background-color: #343a40; /* Fundo escuro */
+    border: none; /* Remove borda */
+}
+
+.sidebar .btn-link {
+    color: #adb5bd; /* Cor do botão de link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.sidebar .btn-link:hover {
+    color: #fff; /* Texto branco no hover */
+}
+
+.sidebar .card {
+    background-color: #343a40; /* Fundo escuro */
+    border: none; /* Remove borda */
+}
+
+/* Estilização das caixas de texto */
+.caixa-texto {
+    margin: 10px 0; /* Margem superior e inferior */
+    padding: 15px; /* Espaçamento interno */
+    border: 1px solid #ced4da; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.caixa-texto:focus {
+    border-color: #80bdff; /* Cor da borda ao focar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
+}
